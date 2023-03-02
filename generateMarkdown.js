@@ -35,30 +35,30 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ${renderLicenseBadge}
-          ${data.description}
-          ## Table of Contents:
-          - [Installation](#installation)
-          - [Usage](#usage)
-          - [Credits](#credits)
-          - [License](#license)
-          -[Questions](#questions)
-          To install the required prerequisites, access the console and execute the following command:
-          \'\'\'
-          ${data.installation}
-          \'\'\'
-          ## Usage:
-          ${data.usage}
-          ## Credits:
-          ${data.credits}
-          ## Tests:
-          to test, access the console and execute the following command
-          \'\'\'${data.test}\'\'\'
-          ${renderLicenseSection(data.license)}
-          ### Questions:
-          You can always reach out to me if you have any questions on [Github] (https://github.com/${data.github}
-          You can always reach out to me if you have any questions on [Email] ${data.email}
+return `# ${data.title}
+${renderLicenseBadge(data.license)}
+${data.description}
+## Table of Contents:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+-[Questions](#questions)
+To install the required prerequisites, access the console and execute the following command:
+\'\'\'
+${data.installation}
+\'\'\'
+## Usage:
+${data.usage}
+ ## Credits:
+${data.credits}
+## Tests:
+to test, access the console and execute the following command
+\'\'\'${data.test}\'\'\'
+${renderLicenseSection(data.license)}
+### Questions:
+You can always reach out to me if you have any questions on [Github] (https://github.com/${data.github}
+You can always reach out to me if you have any questions on [Email] ${data.email}
 
 
 
